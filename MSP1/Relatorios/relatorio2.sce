@@ -202,19 +202,22 @@ scf()
 clf()
 
 //Concentração
-subplot(2,1,1),plot(t,x(1,:),"m")
-subplot(2,1,1),plot(t,x(3,:),"g")
-subplot(2,1,1),plot(t,x(5,:),"b")
+subplot(1,1,1),plot(t,x(1,:),"m")
+subplot(1,1,1),plot(t,x(3,:),"g")
+subplot(1,1,1),plot(t,x(5,:),"b")
 xtitle('Ca [kmol/m^-3] vs Tempo [s]','t[s]','Ca[kmol/m^-3]')
-legend(["Cao: 5 [kmol/m^-3]","Cao: 10 [kmol/m^-3]", "Cao: 15 [kmol/m^-3]"],3)
+legend(["Cao: 8 [kmol/m^-3]","Cao: 10 [kmol/m^-3]", "Cao: 12 [kmol/m^-3]"],3)
 xgrid(0)
 
+scf()
+clf()
+
 //Temperatura
-subplot(2,1,2),plot(t,x(2,:),"m")
-subplot(2,1,2),plot(t,x(4,:),"g")
-subplot(2,1,2),plot(t,x(6,:),"b")
+subplot(1,1,1),plot(t,x(2,:),"m")
+subplot(1,1,1),plot(t,x(4,:),"g")
+subplot(1,1,1),plot(t,x(6,:),"b")
 xtitle('Temperatura [K] vs Tempo [s]','t[s]','Toi [K]')
-legend(["Cao: 5 [kmol/m^-3]","Cao: 10 [kmol/m^-3]", "Cao: 15 [kmol/m^-3]"],2)
+legend(["Cao: 8 [kmol/m^-3]","Cao: 10 [kmol/m^-3]", "Cao: 12 [kmol/m^-3]"],2)
 xgrid(0)
 
 
@@ -281,17 +284,19 @@ scf()
 clf()
 
 //Concentração
-subplot(2,1,2),plot(ti,y(1,:),"m")
-subplot(2,1,2),plot(ti,y(3,:),"g")
-subplot(2,1,2),plot(ti,y(5,:),"b")
+subplot(1,1,1),plot(ti,y(1,:),"m")
+subplot(1,1,1),plot(ti,y(3,:),"g")
+subplot(1,1,1),plot(ti,y(5,:),"b")
 xtitle('Ca [kmol/m^-3] vs Tempo [s]','t[s]','Ca[kmol/m^-3]')
 legend(["To: 290 [K]","To: 298 [K]", "To: 310 [K]"],4)
 xgrid(0)
 
+scf()
+clf()
 //Temperatura
-subplot(2,1,1),plot(ti,y(2,:),"m")
-subplot(2,1,1),plot(ti,y(4,:),"g")
-subplot(2,1,1),plot(ti,y(6,:),"b")
+subplot(1,1,1),plot(ti,y(2,:),"m")
+subplot(1,1,1),plot(ti,y(4,:),"g")
+subplot(1,1,1),plot(ti,y(6,:),"b")
 xtitle('Temperatura [K] vs Tempo [s]','t[s]','Toi [K]')
 legend(["To: 290 [K]","To: 298 [K]", "To: 310 [K]"],1)
 xgrid(0)
@@ -359,17 +364,19 @@ scf()
 clf()
 
 //Concentração
-subplot(2,1,2),plot(t,yi(1,:),"m")
-subplot(2,1,2),plot(t,yi(3,:),"g")
-subplot(2,1,2),plot(t,yi(5,:),"b")
+subplot(1,1,1),plot(t,yi(1,:),"m")
+subplot(1,1,1),plot(t,yi(3,:),"g")
+subplot(1,1,1),plot(t,yi(5,:),"b")
 xtitle('Ca [kmol/m^-3] vs Tempo [s]','t[s]','Ca[kmol/m^-3]')
 legend(["Tj: 290 [K]","Tj: 298 [K]", "Tj: 310 [K]"],3)
 xgrid(0)
 
+scf()
+clf()
 //Temperatura
-subplot(2,1,1),plot(t,yi(2,:),"m")
-subplot(2,1,1),plot(t,yi(4,:),"g")
-subplot(2,1,1),plot(t,yi(6,:),"b")
+subplot(1,1,1),plot(t,yi(2,:),"m")
+subplot(1,1,1),plot(t,yi(4,:),"g")
+subplot(1,1,1),plot(t,yi(6,:),"b")
 xtitle('Temperatura [K] vs Tempo [s]','t[s]','Toi [K]')
 legend(["Tj: 290 [K]","Tj: 298 [K]", "Tj: 310 [K]"],2)
 xgrid(0)
@@ -420,14 +427,15 @@ clf()
 
 //Concentração
 
-subplot(2,1,1),plot(t,j(1,:),"m")
+subplot(1,1,1),plot(t,j(1,:),"m")
 xtitle('Ca [kmol/m^-3] vs Tempo [s]','t[s]','Ci[kmol/m^-3]')
 legend(["Ca [kmol/m^-3]"])
 xgrid(0)
 
 //Temperatura
-
-subplot(2,1,2),plot(t,j(2,:),"b")
+scf()
+clf()
+subplot(1,1,1),plot(t,j(2,:),"b")
 xtitle('Tr [K] vs Tempo [s]','t[s]','Tr [K]')
 legend(["Tr [K]"],4)
 xgrid(0)
