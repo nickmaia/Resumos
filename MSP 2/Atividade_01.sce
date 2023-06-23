@@ -88,6 +88,7 @@ function f=din(t,xi)
     
 endfunction
 
+
 t=0:0.001:60
 xinicial= [Cao;To;Tjo] 
 xi=ode(xinicial,t(1),t,din)
