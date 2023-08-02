@@ -22,7 +22,7 @@ endfunction
 //[L,V]=spec(A)
 
 //disp("Autovetor",L)
-disp("Autovalor",V)
+//disp("Autovalor",V)
 
 // Criando limite para setas dentro da janela gráfica
 xf=-10:3:10
